@@ -7,23 +7,29 @@
     position: relative;
 }
 
-header{
-    width: 100%;
-    height: 100px;
-    border: 1px solid black;
-    box-sizing: border-box;
+.header{
     position: sticky;
-    top:0;
+    top: 0;
+    z-index: 4;
 }
 
-section{
-    overflow-y: hidden;
-    overflow-x: scroll;
+.header li{
+    background-color: green;
 }
 
-.sticky{
+
+.left{
     position: sticky;
     left: 0;
+    z-index: 2;
+    background-color: red !important; 
+}
+
+.right{
+    position: sticky;
+    right: 0;
+    z-index: 2;
+    background-color: blue !important;
 }
 
 ul{
